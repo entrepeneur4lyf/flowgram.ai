@@ -7,8 +7,7 @@
   "scripts": {
     "build": "tsc -b --force",
     "dev": "npm run build -- -w",
-    "lint": "eslint ./ --cache --quiet",
-    "lint:fix": "eslint --fix ../../packages",
+    "lint": "eslint ./src --cache",
     "test": "exit",
     "test:cov": "exit"
   },
@@ -38,6 +37,7 @@
   "devDependencies": {
     "@flowgram.ai/ts-config": "workspace:*",
     "@types/node": "^18",
+    "react": "^18",
     "typescript": "^5.0.4"
   },
   "publishConfig": {
